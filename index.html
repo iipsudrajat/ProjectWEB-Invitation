@@ -69,5 +69,15 @@
 
     <!-- Countdown JS -->
     <script src="assets-wedd/js/countdown.js"></script>
+
+    <script>
+      document.getElementById("btn-buka").addEventListener("click", function () {
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+          event: "open_invitation_click",
+          button_name: "buka_undangan",
+        });
+      });
+    </script>
   </body>
 </html>
